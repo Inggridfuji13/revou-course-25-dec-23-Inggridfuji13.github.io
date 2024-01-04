@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Segitiga</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header id="navigation-bar">
+    <h3 id="logo">KATIK</h3>
+    <nav class="navigation">
+      <a href="#form_large">Luas Segitiga</a>
+      <a href="#form_around">Keliling Segitiga</a>
+    </nav>
+  </header>
+
+  <p class="welcome">Welcome to Kalkulator Matematika Segitiga</p>
+  <p class="app">Sebuah web apps untuk menghitung luas dan keliling segitiga</p>
+  <!-- Hitung Luas -->
+  <form name="form_large" id="form_large" class="input-large-section">
+    <h3 id="large-segitiga" class="large-segitiga" >Luas Segitiga</h3>
+    <img src="https://nidanurzahra.files.wordpress.com/2018/12/segitiga.jpg" alt="" id="img-luas">
+    <p>
+      Rumus Luas Segitiga yaitu: <br>      
+    </p>
+    <p class="judul-rumus-luas">L = 1/2 x a x t</p>
+    <p class="detail1">
+      Dimana: <br>
+      L = Luas <br>
+      a = Panjang Alas <br>
+      t = Tinggi
+    </p>
+    <p id="hitung-luas">
+      <h3 class="hitung-luas">Hitung Luas Segitiga</h3>
+    </p>
+    <label for="input-alas" id="label-alas">Panjang Alas</label>
+    <input type="number" name="input_alas" class="katik-input-alas" placeholder="Masukan nilai Alas">
+    <label for="input-tinggi" id="label-tinggi">Tinggi</label>
+    <input type="number" name="input_tinggi" class="katik-input-tinggi" placeholder="Masukan nilai Tinggi">
+    
+    <input type="text" id="rumus-luas" name="rumus_luas" readonly></input>
+    <input type="text" name="masukan_nilai_luas" id="masukan-nilai-luas" readonly></input>
+    <input type="text" name="hasil_luas" id="hasil-luas" readonly></input>
+    
+    <div class="buttons-large">
+      <input type="button" class="button" id="btn-hitung-luas" value="HITUNG" onclick="luas()">
+      <input type="reset" class="button" id="btn-reset-luas" value="RESET">
+    </div>
+  </form>  
+
+  <!-- Hitung keliling -->
+  <form name="form_around" id="form_around" class="input-around-section">
+    <h3 id="around-segitiga" class="around-segitiga">Keliling Segitiga</h3>
+    <img src="https://nidanurzahra.files.wordpress.com/2018/12/segitiga.jpg" alt="" id="img-luas">
+    <p>
+      Rumus Keliling Segitiga yaitu: <br>      
+    </p>
+    <p class="judul-rumus-kel">K = S1 x S2 x S3</p>
+    <p class="detail2">
+      Dimana: <br>
+      K = Keliling <br>
+      S1 = Sisi A <br>
+      S2 = Sisi B <br>
+      S3 = Sisi C
+    </p>
+    <p id="hitung-kel">
+      <h3 class="hitung-kel">Hitung Keliling Segitiga</h3>
+    </p>
+    <label for="input-sis1" id="label-sisi1">Sisi A</label>
+    <input type="number" name="input_sisi1" class="katik-input-sisi1" placeholder="Masukna nilai Sisi A">
+    <label for="input-sisi2" id="label-sisi2">Sisi B</label>
+    <input type="number" name="input_sisi2" class="katik-input-sisi2" placeholder="Masukan nilai Sisi B">
+    <label for="input-sisi3" id="label-sisi3">Sisi C</label>
+    <input type="number" name="input_sisi3" class="katik-input-sisi3" placeholder="Masukan nilai Sisi C">
+    
+    <input type="text" id="rumus-kel" name="rumus_kel" readonly></input>
+    <input type="text" name="masukan_nilai_kel" id="masukan-nilai-kel" readonly></input>
+    <input type="text" name="hasil_kel" id="hasil-kel" readonly></input>
+    
+
+    <div class="buttons-around">
+      <input type="button" class="button" id="btn-hitung-kel" value="HITUNG" onclick="keliling()">
+      <input type="reset" class="button" id="btn-reset-kel" value="RESET">
+    </div>    
+  </form>
+</body>
+</html>
